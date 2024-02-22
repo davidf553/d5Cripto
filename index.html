@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+	<body>
+		<header class="cabecalho">
+			<!-- aqui vai ficar a logo do site -->
+			<img class="cabecalho__logo" src="./imagens/astronauta.svg" alt="Logo da Alura">
+		</header>
+
+		<main class="container">
+			<section class="container__conteudo__esquerda">
+				<div class="container__textarea__esquerda">
+					<textarea class="textarea-input" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+				</div>
+				<div class="container__notificacao__esquerda">
+					<img class="icone-notificacao" src="./imagens/bi_exclamation-circle-fill.png">
+					<span>Apenas letras minúsculas </span>
+				</div>
+				<div class="container__botoes__esquerda">
+					<button onclick="criptografarTexto()" class="btn-criptografar" id="encrypt">Criptografar</button>
+					<button onclick="descriptografarTexto()" class="btn-descriptografar" id="decrypt">Descriptografar</button>
+				</div>
+			</section>
+
+			<aside class="container__conteudo__direita">
+				<div class="container__textarea__direita">
+					<textarea class="textarea-output" readonly cols="10" rows="30"></textarea>
+					<button onclick="copiarTextoCriptografado()" class="btn-copiar">Copiar</button>
+				</div>
+				<div class="container__textarea__vazio">
+					<img class="alura-boy" src="./imagens/astronauta.svg" alt="pessoa com lupa estudando diamante">
+					<h3 class="container__textarea__titulo">Nenhuma mensagem encontrada</h3>
+					<p class="container__textarea__subtitulo">Digite um texto que você deseja criptografar ou descriptografar</p>
+				</div>	
+			</aside>
+		</main>
+
+	    <footer class="rodape">
+			<p class="rodape__titulo">© Desenvolvido por David Ferreira
+				<a href="https://github.com/davidf553" target="_blank"><img class="rodape__logo__github" 
+					src="./imagens/github.png" alt="Logo do GitHub">
+				</a>
+				<a href="https://www.linkedin.com/in/david-ferreira-864117202/" target="_blank"><img class="rodape__logo__linkedin" 
+					src="./imagens/linkedin.png" alt="Logo do Linkedin">
+				</a>
+			</p>
+		</footer>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
